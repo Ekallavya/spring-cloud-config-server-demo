@@ -1,0 +1,7 @@
+#ensure configured  spring.cloud.config.server.git.uri is available and required properties files are in place before running the config server for all the environments
+    ex: https://github.com/Ekallavya/spring-boot-global-data-config.git
+
+# maven clean install the config server application to ensure all dependencies are resolved and the application is built successfully before running it.
+    mvn clean install
+# run the config server application using the command line or an IDE, ensuring that it is running on port 8888 and able to serve configuration properties to the config client application successfully.
+    java -jar target/spring-cloud-config-server-demo.jar
